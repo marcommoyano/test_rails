@@ -1,0 +1,10 @@
+
+<div class="header">
+  <div class="header-right">
+    <% if logged_in? %>
+      <%= link_to "Cerrar sesión", logout_path, method: :delete, class: "btn btn-danger my-2 my-sm-0 ml-auto" %>
+    <% else %>
+      <%= link_to "Iniciar Sesión", '/login', method: :get, class: "btn btn-primary my-2 my-sm-0 ml-auto"%>
+      <%= link_to "Registrarse", '/users/new', method: :get, class: "btn btn-primary my-2 my-sm-0 ml-2"%>
+    <% end %>  </div>
+</div>

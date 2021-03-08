@@ -1,0 +1,9 @@
+<h4>Tipo</h4>
+<div class="field">
+  <% @types.each do |type| %>
+    <div>
+      <%= radio_button_tag 'type_id', type.id, type.id == @character.type_id %>
+      <label> <%= type.name %> </label>
+    </div>
+  <% end %>
+</div>

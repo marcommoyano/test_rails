@@ -1,0 +1,27 @@
+<section class="h-100 mt-5">
+  <div class="container h-100">
+		<div class="row justify-content-md-center h-100">
+			<div class="card-wrapper">
+				<div class="card fat">
+					<div class="card-body">
+						<h2>Personaje</h2>
+            <p>
+              <strong>Nombre:</strong>
+              <%= h @character.name %>
+            </p>
+            <p>
+              <strong>Color:</strong>
+              <% color = @character.try("color") %>
+              <input type="color" id="head" name="head" value='#<%= color.color %>' disabled>
+              <%= h color.name %>
+            </p>
+            <p>
+              <strong>Tipo:</strong>
+              <%= h @character.try("type").try(:name) %>
+            </p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
