@@ -13,5 +13,6 @@ inicio/cierre de sesión y creación de personaje que con ciertas característic
 * Pasos para levantar la aplicación:
   - instalar dependencias: `bundle install`
   - Crear la base de datos: `rails db:create`
+  - Ejecutar migraciones: `rails db:migrate`
   - Crear data para colores y clases de personaje: `rails db:seed`
   - Levantar aplicación: `rails s`
