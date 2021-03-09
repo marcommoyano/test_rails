@@ -1,24 +1,17 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Esta es una aplicación simple creada utilizando RoR, consta de un sistema de creación de usuario, 
+inicio/cierre de sesión y creación de personaje que con ciertas características.
 
-Things you may want to cover:
+* Versiones: 
+  - Ruby 2.6.5
+  - Rails 6.0.3.5 
 
-* Ruby version
+* Gestor de Base de datos utilizado
+  - sqlite3
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+* Pasos para levantar la aplicación:
+  - instalar dependencias: `bundle install`
+  - Crear la base de datos: `rails db:create`
+  - Crear data para colores y clases de personaje: `rails db:seed`
+  - Levantar aplicación: `rails s`
